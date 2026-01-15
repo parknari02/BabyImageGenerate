@@ -14,7 +14,7 @@ export default function FeatureCard({
   title,
   description,
   backgroundImage,
-  backgroundColor = 'bg-gradient-to-br from-primary-100 to-primary-200',
+  backgroundColor = 'bg-white',
   to,
   children,
 }: FeatureCardProps) {
