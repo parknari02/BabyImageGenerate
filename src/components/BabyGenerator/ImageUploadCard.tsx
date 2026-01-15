@@ -23,7 +23,7 @@ export default function ImageUploadCard({ label, image, onImageChange }: ImageUp
   return (
     <div
       onClick={() => inputRef.current?.click()}
-      className="bg-white rounded-2xl px-6 py-10 flex flex-col items-center gap-4 border border-[#E3E3E3] cursor-pointer hover:border-primary-300 transition-colors"
+      className="bg-white rounded-2xl px-6 py-10 flex flex-col items-center gap-4 border border-[#E3E3E3] cursor-pointer hover:border-primary-500 transition-colors"
     >
       <input
         ref={inputRef}
@@ -32,7 +32,7 @@ export default function ImageUploadCard({ label, image, onImageChange }: ImageUp
         onChange={handleImageUpload}
         className="hidden"
       />
-      <div className={`w-28 h-28 rounded-full flex items-center justify-center overflow-hidden ${image ? '' : 'border-2 border-dashed border-primary-300 bg-primary-100'}`}>
+      <div className={`w-28 h-28 rounded-full flex items-center justify-center overflow-hidden ${image ? 'border-2 border-primary-500' : 'border-2 border-dashed border-primary-500 bg-primary-100'}`}>
         {image ? (
           <img src={image} alt={label} className="w-full h-full object-cover" />
         ) : (

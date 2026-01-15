@@ -25,7 +25,7 @@ export default function MainPage() {
           <FeatureCard
             title="미래 2세 만들기"
             description="캐릭터와 나의 아이는 어떤 모습일까?"
-            backgroundColor="bg-gradient-to-br from-primary-500 to-primary-300"
+            backgroundColor="bg-gradient-to-br from-primary-300 to-primary-600"
             to="/baby-generator"
           >
             <div className="absolute inset-0 flex items-center justify-center pb-8">

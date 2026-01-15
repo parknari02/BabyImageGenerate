@@ -76,7 +76,7 @@ export default function BabyGeneratorPage() {
           <div className="text-center mt-10">
             <h1 className="relative text-[20px] font-bold text-black leading-normal tracking-[-0.54px]">
               <span className="relative">
-                <span className="absolute inset-0 bg-primary-300/20 blur-xl pointer-events-none" />
+                <span className="absolute inset-0 bg-primary-500/30 blur-xl pointer-events-none" />
                 <span className="relative">우리 아이의 모습이에요!</span>
               </span>
             </h1>
@@ -163,12 +163,12 @@ export default function BabyGeneratorPage() {
         <div className="text-center mb-12">
           <h1 className="relative text-[20px] font-bold text-black leading-normal tracking-[-0.54px]">
             <span className="relative">
-              <span className="absolute inset-0 bg-primary-300/20 blur-xl pointer-events-none" />
+              <span className="absolute inset-0 bg-primary-500/30 blur-xl pointer-events-none" />
               <span className="relative">캐릭터와 나의 2세는 어떻게 생겼을까?</span>
             </span>
             <br />
             <span className="relative">
-              <span className="absolute inset-0 bg-primary-300/20 blur-xl pointer-events-none" />
+              <span className="absolute inset-0 bg-primary-500/30 blur-xl pointer-events-none" />
               <span className="relative">AI가 예측하는 우리 아이 얼굴을 확인해보세요!</span>
             </span>
           </h1>
