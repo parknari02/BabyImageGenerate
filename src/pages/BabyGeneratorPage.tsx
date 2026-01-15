@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import ImageUploadCard from '../components/BabyGenerator/ImageUploadCard'
 import StyleSelector from '../components/BabyGenerator/StyleSelector'
 import GenderToggle from '../components/BabyGenerator/GenderToggle'
@@ -7,6 +8,7 @@ import LoadingSpinner from '../components/common/LoadingSpinner'
 const API_URL = import.meta.env.VITE_API_URL
 
 export default function BabyGeneratorPage() {
+  const navigate = useNavigate()
   const [dadImage, setDadImage] = useState<string | null>(null)
   const [momImage, setMomImage] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
@@ -145,10 +147,16 @@ export default function BabyGeneratorPage() {
       <div className="w-full max-w-[500px] min-h-screen bg-primary-50 flex flex-col gap-4 px-5 py-8">
         {/* Header */}
         <div className="flex items-center mb-14">
-          <span className="text-lg font-semibold">
+          <button
+            onClick={() => navigate('/')}
+            className="cursor-pointer w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/50 transition-colors"
+          >
+            <img src="/left-arrow.svg" alt="뒤로가기" className='mb-[2px]' />
+          </button>
+          <span className="text-lg font-semibold ml-2">
             미래 2세 만들기
           </span>
-          <img src="/logo.svg" />
+          <img src="/logo.svg" alt="로고"/>
         </div>
 
         {/* Title */}
